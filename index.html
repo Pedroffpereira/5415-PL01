@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5414 - PL04</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>5415 - PL04</h1>
+
+    <div class="form-container">
+        <h2>New Contact</h2>
+        <form>
+            <input id="input_id" type="hidden" name="input_id" />
+            <input class="form-control" id="input_name" type="text" name="input_name" placeholder="Nome completo" />
+            <input class="form-control" id="input_phone" type="text" name="input_phone" placeholder="91........" />
+            <input class="form-control" id="input_email" type="email" name="input_email" placeholder="nome@mail.com" />
+            <div>
+                <button class="form-control" type="submit">Guardar</button>
+                <button class="form-control" type="reset">Limpar</button>
+            </div>
+        </form>
+    </div>
+    <div class="list-container">
+        <h2>Lista de Contactos</h2>
+        <ul>
+            <li class="list-item">
+                <span>Contact 01 - 919919919 - contact1@mail.pt</span>
+                <div>
+                    <button id="btn-edit-contact" class="form-control bg-blue">Editar</button>
+                    <button class="form-control bg-red">Apagar</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="Contact.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
