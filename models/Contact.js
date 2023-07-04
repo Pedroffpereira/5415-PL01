@@ -1,6 +1,7 @@
 class Contact {
     constructor(id, name, email, phone) {
-        if(id === 0){
+        console.log(id == "")
+        if(id == ""){
             this.id = listContacts.length + 1;
         }else{
             this.id = id
