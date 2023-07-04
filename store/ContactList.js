@@ -1,8 +1,6 @@
 const listContacts = []
 
 function setListContacts(id, name, phone, email) {
-    console.log(id == "")
-    debugger
     if(id == ""){
         //Create
         const new_contact = new Contact(id, name, phone, email);
@@ -17,6 +15,6 @@ function setListContacts(id, name, phone, email) {
         contact.phone = email;
     }
 
-    setListContacts();
+    renderList(listContacts)
 
 }
