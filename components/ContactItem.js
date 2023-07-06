@@ -7,7 +7,7 @@ function ContactItem(contact){
         <span>${contact.name} - ${contact.phone} - ${contact.email}</span>
         <div>
             <button id="btn-edit-contact" class="form-control bg-blue">Editar</button>
-            <button class="form-control bg-red">Apagar</button>
+            <button class="form-control bg-red" id="btn-elim-contact">Apagar</button>
         </div>
     `
 
@@ -25,5 +25,10 @@ function ContactItem(contact){
         })
     }
 
+    const btnElim = contactItemElement.querySelector('#btn-elim-contact');
+
+    btnElim.onclick = function(){
+        deleteContactItemList(contact.id)
+    }
     return contactItemElement 
 }
